@@ -65,15 +65,13 @@ label-urgent-padding = 2
 
 [module/wlan]
 type = internal/network
-interface = net1
+interface = wlp3s0b1
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-foreground = #e6a57a
-format-connected-background = #1e1e20
 format-connected-padding = 2
 label-connected = %essid%
-
+label-connected-foreground = #C6723a
 format-disconnected =
 
 ramp-signal-0 = 
@@ -81,11 +79,11 @@ ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = #1e1e20
+ramp-signal-foreground = #C6723a
 
 [module/eth]
 type = internal/network
-interface = enp0s3
+interface = enp2s0f0
 interval = 3.0
 
 format-connected-padding = 2
